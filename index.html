@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div>
-        <header>
-            <div>
+    <div class="container">
+        <header class="header">
+            <div class="header-text-section">
                 <h2>Hello, I'm</h2>
                 <h1>Adam Hirshson</h1>
                 <h2>Computer Science | FIU Class of 2026</h2>
@@ -18,24 +19,24 @@
                     officiis, similique laudantium rerum repellendus excepturi modi
                      voluptatibus, ad sunt? Rerum ipsam molestiae enim dolores.</p>
             </div>
-            <div>
-                <img src="assets/LinkedIn photo.jpeg" alt="img" width="500">
+            <div class="header-image-section">
+                <img class="header-image" src="assets/Headshot 1.jpg" alt="img" width="500">
             </div>
         </header>
 
-        <section>
-            <div>Skills</div>
+        <section class="skills-section">
+            <div class="skills-title-main">Skills</div>
             <div>
-                <div>Languages</div>
-                <div>
+                <div class="skills-title">Languages</div>
+                <div class="skills-card">
                     <p>Java | C | Dart | Swift | SQL | MATLAB</p>
                 </div>
-                <div>Frameworks</div>
-                <div>
+                <div class="skills-title">Frameworks</div>
+                <div class="skills-card">
                     <p>React, Flutter, SwiftUI</p>
                 </div>
-                <div>Tools</div>
-                <div>
+                <div class="skills-title">Tools</div>
+                <div class="skills-card">
                     <p>VS Code, Matlab, GitHub, UNIX</p>
                 </div>
             </div>
@@ -43,9 +44,16 @@
 
         <section>
             <h2>Projects</h2>
-            <div>
+            <div class="carousel">
                 <button>&#8594</button>
-                <div></div>
+                <div class="projects">
+                    <div class="project-card">
+                        <img src="" alt="" class="project-image">
+                        <h3 class="project-title">A Project</h3>
+                        <p class="project-text">some text here</p>
+                        <a href="" class="project-link">Link</a>
+                    </div>
+                </div>
                 <button>&#8592</button>
             </div>
         </section>
@@ -112,6 +120,14 @@
 
             </div>
         </section>
+        <footer>
+            <div>
+                <p>&copy; 2025 Adam Hirshson</p>
+                <a href="https://www.linkedin.com/in/adam-hirshson/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Ahirshson02" target="_blank">GitHub</a>
+                <!-- Look at targets to open up a new tab, instead of changing the current tab-->
+            </div>
+        </footer>
     </div>
 
 </body>
